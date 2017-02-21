@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="ListViewTest.CustomCell">
+
+
+	<Frame Padding="10">
+
+		<StackLayout BackgroundColor="Transparent">
+
+			<Grid RowSpacing="0" ColumnSpacing="10" Padding="0" BackgroundColor="Transparent">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="*"/>
+					<RowDefinition Height="50"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="*"/>
+					<ColumnDefinition Width="*"/>
+				</Grid.ColumnDefinitions>
+
+
+				<!-- Row 1-->
+				<Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding MessageTitle}"/>
+
+				<!-- Row 2-->
+				<Button Grid.Row="1" Grid.Column="0" CommandParameter="{Binding MessageId}" Text="Read"/>
+				<Button Grid.Row="1" Grid.Column="1" CommandParameter="{Binding MessageId}" Text="Answer"/>
+
+			</Grid>
+		</StackLayout>
+	</Frame>
+	
+</ViewCell>

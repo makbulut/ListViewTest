@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="ListViewTest.Views.MessagesPage"
+		xmlns:comp="clr-namespace:ListViewTest.Controls;assembly=ListViewTest"
+		xmlns:selectors="clr-namespace:ListViewTest.Helpers;assembly=ListViewTest"
+		>
+
+
+	<ContentPage.Resources>
+        <ResourceDictionary>
+			<selectors:MessagesDataTemplateSelector x:Key="MessagesDataTemplateSelector"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+	
+	<ContentPage.Content>
+
+		<StackLayout>
+			<ListView ItemsSource="{Binding MessageList}" 
+					HasUnevenRows="True"
+					HorizontalOptions="FillAndExpand" 
+					VerticalOptions="FillAndExpand"
+					BackgroundColor="Transparent"
+					ItemTemplate="{StaticResource MessagesDataTemplateSelector}">
+
+
+			</ListView>
+		</StackLayout>
+
+	</ContentPage.Content>
+</ContentPage>
