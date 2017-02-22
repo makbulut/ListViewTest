@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace ListViewTest.ViewModels
 {
-	public class BaseViewModel : INotifyPropertyChanged
+	public class BaseViewModel : INotifyPropertyChanged, IViewModel
 	{
 
 		bool _isBusy = false;

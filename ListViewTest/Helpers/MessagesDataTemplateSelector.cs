@@ -16,6 +16,7 @@ namespace ListViewTest.Helpers
 			{
 				case nameof(Message):
 				default:
+					customCellTemplate.SetBinding(CustomCell.ParentBindingContextProperty, new Binding("BindingContext", BindingMode.Default, null, null, null, container));
 					return customCellTemplate;
 			}
 		}

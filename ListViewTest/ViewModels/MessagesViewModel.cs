@@ -16,10 +16,20 @@ namespace ListViewTest.ViewModels
 
 		public SearchMessageRequest request;
 
+		public string TestText
+		{
+			get { return "Test Text Here!"; }
+		}
+
 
 		public ICommand CommandReadMessage
 		{
 			get { return new Command<Message>(ReadMessage); }
+		}
+
+		public ICommand CommandAnswerMessage
+		{
+			get { return new Command<Message>(AnswerMessage); }
 		}
 
 
@@ -45,6 +55,10 @@ namespace ListViewTest.ViewModels
 		void ReadMessage(Message item)
 		{
 			Application.Current.MainPage.DisplayAlert("", "Clicked read button", "OK");
+		}
+		void AnswerMessage(Message item)
+		{
+			Application.Current.MainPage.DisplayAlert("", "Clicked answer button", "OK");
 		}
 
 

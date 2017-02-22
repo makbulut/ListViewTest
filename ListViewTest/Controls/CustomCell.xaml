@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ViewCell xmlns="http://xamarin.com/schemas/2014/forms"
         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-		x:Class="ListViewTest.CustomCell">
+		x:Class="ListViewTest.CustomCell"
+		x:Name="Cell">
 
 
 	<Frame Padding="10">
@@ -21,10 +22,11 @@
 
 				<!-- Row 1-->
 				<Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding MessageTitle}"/>
+				<Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding ParentBindingContext.TestText, Source={x:Reference Cell}}"/>
 
 				<!-- Row 2-->
-				<Button Grid.Row="1" Grid.Column="0" CommandParameter="{Binding MessageId}" Text="Read"/>
-				<Button Grid.Row="1" Grid.Column="1" CommandParameter="{Binding MessageId}" Text="Answer"/>
+				<Button Grid.Row="2" Grid.Column="0" CommandParameter="{Binding MessageId}" Command="{Binding ParentBindingContext.CommandReadMessage, Source={x:Reference Cell}}" Text="Read"/>
+				<Button Grid.Row="2" Grid.Column="1" CommandParameter="{Binding MessageId}" Text="Answer"/>
 
 			</Grid>
 		</StackLayout>

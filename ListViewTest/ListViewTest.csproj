@@ -57,6 +57,7 @@
     </Compile>
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="Helpers\MessagesDataTemplateSelector.cs" />
+    <Compile Include="ViewModels\IViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
