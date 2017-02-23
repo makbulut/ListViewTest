@@ -21,43 +21,57 @@ namespace ListViewTest.Services
 			{
 				new Message {
 					MessageId = 1,
-					MessageTitle = "Mesaj Title 1",
-					MessageText = "Mesaj Text 1",
+					MessageTitle = "Message Title 1",
+					MessageText = "Message Text 1",
 					MessageDate = DateTime.Now
 
 				},
 				new Message {
 					MessageId = 2,
-					MessageTitle = "Mesaj Title 2",
-					MessageText = "Mesaj Text 2",
+					MessageTitle = "Message Title 2",
+					MessageText = "Message Text 2",
 					MessageDate = DateTime.Now
 
 				},
 				new Message {
 					MessageId = 3,
-					MessageTitle = "Mesaj Title 3",
-					MessageText = "Mesaj Text 3",
+					MessageTitle = "Message Title 3",
+					MessageText = "Message Text 3",
 					MessageDate = DateTime.Now
 
 				},
 				new Message {
 					MessageId = 4,
-					MessageTitle = "Mesaj Title 4",
-					MessageText = "Mesaj Text 4",
+					MessageTitle = "Message Title 4",
+					MessageText = "Message Text 4",
 					MessageDate = DateTime.Now
 
 				},
 				new Message {
 					MessageId = 5,
-					MessageTitle = "Mesaj Title 5",
-					MessageText = "Mesaj Text 5",
+					MessageTitle = "Message Title 5",
+					MessageText = "Message Text 5",
 					MessageDate = DateTime.Now
 
 				},
 				new Message {
 					MessageId = 6,
-					MessageTitle = "Mesaj Title 6",
-					MessageText = "Mesaj Text 6",
+					MessageTitle = "Message Title 6",
+					MessageText = "Message Text 6",
+					MessageDate = DateTime.Now
+
+				},
+				new Message {
+					MessageId = 7,
+					MessageTitle = "Message Title 7",
+					MessageText = "Message Text 7",
+					MessageDate = DateTime.Now
+
+				},
+				new Message {
+					MessageId = 6,
+					MessageTitle = "Message Title 8",
+					MessageText = "Message Text 8",
 					MessageDate = DateTime.Now
 
 				},

@@ -25,8 +25,8 @@
 				<Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding ParentBindingContext.TestText, Source={x:Reference Cell}}"/>
 
 				<!-- Row 2-->
-				<Button Grid.Row="2" Grid.Column="0" CommandParameter="{Binding MessageId}" Command="{Binding ParentBindingContext.CommandReadMessage, Source={x:Reference Cell}}" Text="Read"/>
-				<Button Grid.Row="2" Grid.Column="1" CommandParameter="{Binding MessageId}" Text="Answer"/>
+				<Button Grid.Row="2" Grid.Column="0" CommandParameter="{Binding .}" Command="{Binding ParentBindingContext.CommandReadMessage, Source={x:Reference Cell}}" Text="Read"/>
+				<Button Grid.Row="2" Grid.Column="1" CommandParameter="{Binding .}" Command="{Binding ParentBindingContext.CommandAnswerMessage, Source={x:Reference Cell}}" Text="Answer"/>
 
 			</Grid>
 		</StackLayout>

@@ -18,7 +18,7 @@ namespace ListViewTest.ViewModels
 
 		public string TestText
 		{
-			get { return "Test Text Here!"; }
+			get { return "Text from ViewModel property which is binded to ListView !"; }
 		}
 
 

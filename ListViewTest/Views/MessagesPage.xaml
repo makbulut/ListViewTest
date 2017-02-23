@@ -17,10 +17,6 @@
 
 		<StackLayout>
 
-			<Button CommandParameter="1" 
-				Command="{Binding CommandReadMessage}" 
-				Text="Read"/>
-			
 			<ListView ItemsSource="{Binding MessageList}" 
 					HasUnevenRows="True"
 					HorizontalOptions="FillAndExpand" 
